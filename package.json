@@ -1,5 +1,5 @@
 {
-  "name": "trip-recommendation",
+  "name": "lipsyncly",
   "version": "0.1.2",
   "description": "A node.js app for getting open tables",
   "scripts": {

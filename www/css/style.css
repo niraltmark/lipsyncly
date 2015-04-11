@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.bar-header {
+    background-color:#DD3745;
+}
+
+.bar-header .title {
+    color: white;
+    font-family: 'Poiret One', cursive;
+}

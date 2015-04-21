@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<!-- saved from url=(0022)http://localhost:8000/ -->
+<html hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Lipsyncly</title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="http://localhost:8000/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="http://localhost:8000/css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
     <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="./Lipsyncly_files/ionic.bundle.js"></script><style type="text/css"></style>
 
     <!-- cordova script (this will be a 404 during development) -->
 <!--    <script src="cordova.js"></script>-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./Lipsyncly_files/jquery.min.js"></script>
 
     <!-- your app's js -->
-<script type="text/javascript" src="js/webcam.js"></script>
+<script type="text/javascript" src="./Lipsyncly_files/webcam.js"></script>
 
-      <script src="js/app.js"></script>
-    <script src="http://code.ionicframework.com/collide/0.0.4/collide.js"></script>
+      <script src="./Lipsyncly_files/app.js"></script>
+    <script src="./Lipsyncly_files/collide.js"></script>
 <!--
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
 -->
       
   </head>
-  <body ng-app="starter" no-scroll>
+  <body ng-app="starter" no-scroll="" class="grade-a platform-browser platform-win32 platform-ready" cz-shortcut-listen="true">
     <div style="width:100%; height:280px; background-color:#EEEEEE;position:absolute; top:0; left:0; z-index:0"></div>
-    <div class="container" style="display:block;position:relative; margin:0px auto; background-image:url('img/untitled.png'); height:600px; width:310px;background-repeat: no-repeat; background-size:contain; padding-right: 39px; padding-top: 93px; padding-left: 37px;">
-        <div class="the-app" style="background-color:white;height:415px">
-            <div id="camera-me" style="width:234px; height:176px; text-align:center; padding-top:20px; cursor:pointer">
-                <img src="img/camera.png" width="100px" /><br />
+    <div class="container" style="display:block;position:relative; margin:0px auto; background-image:url(&#39;img/untitled.png&#39;); height:600px; width:310px;background-repeat: no-repeat; background-size:contain; padding-right: 39px; padding-top: 93px; padding-left: 37px;">
+        <div class="the-app" style="background-color: black;height:415px">
+            <div id="camera-me" style="width: 234px; height: 176px; text-align: center; padding-top: 20px; cursor: pointer; display: none;">
+                <img src="./Lipsyncly_files/camera.png" width="100px"><br>
                 Click to turn on the camera
             </div>
-            <video id="video" autoplay="" controls="" loop="" style="width: 234px; height: 176px; display:none"></video>
-            <div style="width: 234px; height: 176px; overflow:hidden; position:relative;">
+            <video id="video" autoplay="" loop="" style="width: 234px; height: 176px; display: block;opacity: 0.3;" src="blob:http%3A//localhost%3A8000/b769b3bb-517e-4057-96cf-412fa3976e45" width="234" height="176"></video>
+            <div style="width: 234px; height: 176px; overflow:hidden; position:relative;opacity: 0.3;">
                 <video id="uptown-video" src="img/uptown-funk.mp4" style="width: 312px; height: 176px; position:absolute; left:-39px"></video>
             </div>
-            <div id="buttons" style="background-image:url('img/buttons-bg.png'); height:64px; width:100%; background-repeat:no-repeat; background-size:contain; text-align:center">
-                <img id="record-me" src="img/record.png" style="width:61px; margin-top:9px; cursor:pointer;"/>
+            <div id="buttons" style="opacity: 0.3;background-image:url(&#39;img/buttons-bg.png&#39;); height:64px; width:100%; background-repeat:no-repeat; background-size:contain; text-align:center">
+                <img id="record-me" src="./Lipsyncly_files/stop.png" style="width:61px; margin-top:9px; cursor:pointer;" class="stoping">Recording...</img>
             </div>
-<div id="video-preview" style="position:absolute; left:47px; top:190px; background-color:white">
-<!--  <button id="stop-me" disabled="">◼</button>-->
+<div id="video-preview" style="
+    position: absolute;
+    top: 189px;
+    left: 47px;
+">
+  
   <!--<button id="play-me" disabled>►</button>-->
-<!--
   <span id="elasped-time"></span>
-<p><a download="capture.webm" title="Download your .webm video" href="blob:http://html5-demos.appspot.com/d6541de4-5c39-4e65-941c-19d24341ea86">[ download video ]</a></p>
--->
-            </div>
+
+            <video autoplay="" src="blob:http%3A//localhost%3A8000/0e44c789-6e66-4e1b-a749-0eac93600bae" style="width: 214px; height: 176px;"></video></div>
         </div>
     </div>
       <!--<script src="libwebp-0.1.3.min.js"></script>-->
-<script type="text/javascript" async="" src="ga.js"></script><script src="whammy.min.js"></script>
+<script type="text/javascript" async="" src="./Lipsyncly_files/ga.js"></script><script src="./Lipsyncly_files/whammy.min.js"></script>
 <script>
 (function(exports) {
 
@@ -103,8 +105,8 @@ function turnOnCamera(e) {
     // Note: video.onloadedmetadata doesn't fire in Chrome when using getUserMedia so
     // we have to use setTimeout. See crbug.com/110938.
     setTimeout(function() {
-      video.width = 214;//video.clientWidth;
-      video.height = 161;// video.clientHeight;
+      video.width = 234;//video.clientWidth;
+      video.height = 176;// video.clientHeight;
       // Canvas is 1/2 for performance. Otherwise, getImageData() readback is
       // awful 100ms+ as 640x480.
       canvas.width = video.width;
@@ -151,7 +153,7 @@ function record() {
   startTime = Date.now();
 
   // toggleActivateRecordButton();
-//  $('#stop-me').disabled = false;
+  $('#stop-me').disabled = false;
 
   function drawVideoFrame_(time) {
     rafId = requestAnimationFrame(drawVideoFrame_);
@@ -170,19 +172,17 @@ function record() {
     //frames.push(ctx.getImageData(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT).data);
 
     // ImageData
-    //frames.push(ctx.getImageData(0, 0, CANVAS_WIDTH, ));
+    //frames.push(ctx.getImageData(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT));
   };
 
   rafId = requestAnimationFrame(drawVideoFrame_);
 };
 
 function stop() {
-        $("#video").pause();
-
     $("#uptown-video").pause();
   cancelAnimationFrame(rafId);
   endTime = Date.now();
-//  $('#stop-me').disabled = true;
+  $('#stop-me').disabled = true;
   document.title = ORIGINAL_DOC_TITLE;
 
   toggleActivateRecordButton();
@@ -191,10 +191,6 @@ function stop() {
               ((endTime - startTime) / 1000) + 's video');
 
   embedVideoPreview();
-    
-    jQuery("#video").css("opacity","0.3");
-    jQuery("#uptown-video").css("opacity","0.3");
-    jQuery(".the-app").css("background-color","black");
 };
 
 function embedVideoPreview(opt_url) {
@@ -205,6 +201,8 @@ function embedVideoPreview(opt_url) {
   if (!video) {
     video = document.createElement('video');
     video.autoplay = true;
+    video.controls = true;
+    video.loop = true;
     //video.style.position = 'absolute';
     //video.style.top = '70px';
     //video.style.left = '10px';
@@ -212,16 +210,14 @@ function embedVideoPreview(opt_url) {
     video.style.height = canvas.height + 'px';
     $('#video-preview').appendChild(video);
     
-//    downloadLink = document.createElement('a');
-//    downloadLink.download = 'capture.webm';
-//    downloadLink.textContent = '[ download video ]';
-//    downloadLink.title = 'Download your .webm video';
-//    var p = document.createElement('p');
-//    p.appendChild(downloadLink);
+    downloadLink = document.createElement('a');
+    downloadLink.download = 'capture.webm';
+    downloadLink.textContent = '[ download video ]';
+    downloadLink.title = 'Download your .webm video';
+    var p = document.createElement('p');
+    p.appendChild(downloadLink);
 
-      jQuery("#video-preview").append("<div class='approve-buttons' style='background-color:white;text-align:center;padding-bottom:5px;'>Decline | Accept</div>");
-
-//    $('#video-preview').appendChild(p);
+    $('#video-preview').appendChild(p);
 
   } else {
     window.URL.revokeObjectURL(video.src);
@@ -240,13 +236,13 @@ function embedVideoPreview(opt_url) {
   }
 
   video.src = url;
-//  downloadLink.href = url;
+  downloadLink.href = url;
 }
 
 function initEvents() {
   $('#camera-me').addEventListener('click', turnOnCamera);
   $('#record-me').addEventListener('click', record);
-//  $('#stop-me').addEventListener('click', stop);
+  $('#stop-me').addEventListener('click', stop);
     
  //   turnOnCamera();
 }
@@ -258,6 +254,7 @@ exports.$ = $;
 })(window);
 
 </script>
-    </body>
-</html>
+    
 
+
+</body></html>

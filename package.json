@@ -6,12 +6,13 @@
     "start": "node --harmony index.js"
   },
   "dependencies": {
+    "body-parser": "~1.12.x",
     "express": "~4.9.x",
+    "iron_worker": "^0.1.4",
+    "mongoose": "~4.0.x",
+    "promise": "~6.1.x",
     "rootpath": "~0.1.x",
-    "when": "^3.7.2",
-    "promise":"~6.1.x",
-    "mongoose":"~4.0.x",
-    "body-parser":"~1.12.x"
+    "when": "^3.7.2"
   },
   "engines": {
     "node": "0.11.x"

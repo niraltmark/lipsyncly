@@ -2,14 +2,14 @@
   "name": "lipsyncly-workers",
   "version": "1.0.0",
   "description": "Running workes for iron.io",
-  "main": "split_video_worker_factory.js",
+  "main": "split_video_worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "iron_worker": "^0.1.4",
-    "mongoose": "~4.0.x"  
+    "mongoose": "~4.0.x",
+    "transloadit": "^1.3.0"
   }
 }

@@ -2,14 +2,20 @@
   "name": "lipsyncly-workers",
   "version": "1.0.0",
   "description": "Running workes for iron.io",
-  "main": "split_video_worker_factory.js",
+  "main": "silence_detect_worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "iron_worker": "^0.1.4",
-    "mongoose": "~4.0.x"
+    "aws-sdk": "^2.1.28",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "promise": "~6.1.x",
+    "rootpath": "^0.1.2",
+    "s3-upload-stream": "^1.0.7",
+    "shelljs": "^0.4.0",
+    "when": "^3.7.2"
   }
 }

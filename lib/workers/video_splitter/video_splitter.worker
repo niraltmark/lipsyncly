@@ -1,0 +1,15 @@
+# define the runtime language
+runtime "node"
+
+# define IronWorker stack
+stack "ffmpeg-2.3"
+
+# exec is the file that will be executed:
+exec "video_splitter_worker.js"
+
+dir "node_modules"	# include dependency files when uploading
+dir "inner_modules" # include inner dependency files when uploading
+file "package.json" # include dependency manifest when uploading
+
+# file "package.json" 
+# build "npm install" 

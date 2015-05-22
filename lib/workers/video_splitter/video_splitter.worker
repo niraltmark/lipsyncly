@@ -11,8 +11,6 @@ dir "node_modules"	# include dependency files when uploading
 dir "inner_modules" # include inner dependency files when uploading
 file "package.json" # include dependency manifest when uploading
 
-set_env 'AWS_ACCESS_KEY', ENV['AWS_ACCESS_KEY']
-set_env 'AWS_SECRET_KEY', ENV['AWS_SECRET_KEY']
 set_env 'TRANSLOADIT_AUTH_KEY', ENV['TRANSLOADIT_AUTH_KEY']
 set_env 'TRANSLOADIT_AUTH_SECRET', ENV['TRANSLOADIT_AUTH_SECRET']
 set_env 'SILENT_EXEC', false

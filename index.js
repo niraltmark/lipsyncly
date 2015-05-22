@@ -23,6 +23,8 @@ app.all('*', function(req, res, next) {
 
 // TODO :  Just add anything in the controllers folder
 require('lib/controllers/uploads-controller.js')(app);
+require('lib/controllers/changed-fps-controller.js')(app);
+
 
 // TODO : Load all the moongose stuff (MongoDb)
 require('lib/storages/mongo/mongodb-initializer.js')();

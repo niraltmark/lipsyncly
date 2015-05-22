@@ -11,5 +11,9 @@ dir "node_modules"	# include dependency files when uploading
 dir "inner_modules" # include inner dependency files when uploading
 file "package.json" # include dependency manifest when uploading
 
+set_env 'AWS_ACCESS_KEY', ENV['AWS_ACCESS_KEY']
+set_env 'AWS_SECRET_KEY', ENV['AWS_SECRET_KEY']
+set_env 'SILENT_EXEC', true
+
 # file "package.json" 
 # build "npm install" 

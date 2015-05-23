@@ -1,0 +1,19 @@
+# define the runtime language
+runtime "node"
+
+# define IronWorker stack
+stack "ffmpeg-2.3"
+
+# exec is the file that will be executed:
+exec "concatenate_videos_worker.js"
+
+dir "node_modules"	# include dependency files when uploading
+dir "inner_modules" # include inner dependency files when uploading
+file "package.json" # include dependency manifest when uploading
+
+set_env 'TRANSLOADIT_AUTH_KEY', ENV['TRANSLOADIT_AUTH_KEY']
+set_env 'TRANSLOADIT_AUTH_SECRET', ENV['TRANSLOADIT_AUTH_SECRET']
+set_env 'SILENT_EXEC', false
+
+# file "package.json" 
+# build "npm install" 

@@ -13,6 +13,9 @@ file "package.json" # include dependency manifest when uploading
 
 set_env 'TRANSLOADIT_AUTH_KEY', ENV['TRANSLOADIT_AUTH_KEY']
 set_env 'TRANSLOADIT_AUTH_SECRET', ENV['TRANSLOADIT_AUTH_SECRET']
+set_env 'AWS_ACCESS_KEY', ENV['AWS_ACCESS_KEY']
+set_env 'AWS_SECRET_KEY', ENV['AWS_SECRET_KEY']
+
 set_env 'SILENT_EXEC', false
 
 # file "package.json" 
